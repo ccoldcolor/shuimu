@@ -6,6 +6,7 @@ class IndexController extends BaseController {
         parent::_initialize ();
     }
     public function index(){
+        
         $admin_info = session('admin_info');
         if(!$admin_info){
             $this->redirect('Login/index');
